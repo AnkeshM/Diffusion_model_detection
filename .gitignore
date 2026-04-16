@@ -1,0 +1,53 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Virtual Environment
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Ignore Images folder
+# =========================
+Images/
+
+# =========================
+# Ignore results/output
+# =========================
+results/
+
+# =========================
+# Ignore ONLY subfolders inside synthbuster
+# =========================
+synthbuster/*/
+
+# BUT keep files directly inside synthbuster
+!synthbuster/*.md
+!synthbuster/*.csv
+!synthbuster/LICENCE
+!synthbuster/.directory
+
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment variables
+# =========================
+.env
