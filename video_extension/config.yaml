@@ -1,0 +1,21 @@
+dataset:
+  real_dir: "real"
+  fake_dir: "fake"
+  frames_per_video: 16       # Number of frames to uniformly sample per video
+  image_size: 1024           # Required by spatial DetectorNet (1024x1024)
+
+training:
+  batch_size: 8              # Number of videos per batch. Keep small for 4GB VRAM
+  epochs: 20
+  learning_rate: 0.0005
+  temporal_hidden_size: 128  # Dimension of LSTM hidden state
+  num_lstm_layers: 1
+  freeze_spatial: true       # Phase 1: Freeze DetectorNet, train LSTM
+  unfreeze_epoch: 5          # Phase 2: Unfreeze DetectorNet and fine-tune End-to-End
+  workers: 4
+
+paths:
+  pretrained_spatial_model: "../results/robust_model.pth"
+  save_model: "outputs/video_model.pth"
+  results_dir: "outputs"
+  extracted_features_dir: "extracted_features"
