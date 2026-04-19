@@ -1,4 +1,4 @@
-# Diffusion Model Detection
+# Detection of Diffusion Model Generated Images / Videos
 
 **Final Video Link:** https://drive.google.com/file/d/1f30i8VRXWJACDL4tsARPlDs-sRP1FRl7/view?usp=sharing
 
